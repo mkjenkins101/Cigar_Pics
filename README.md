@@ -6,3 +6,5 @@ This is a pinterest clone guided by OneMonthRails tutorial
 Rails 4.1.8
 
 By: Mitch Jenkins
+
+test
