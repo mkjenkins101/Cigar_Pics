@@ -149,7 +149,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  aws-sdk (~> 2.1.4)
+  aws-sdk (~> 2.0)
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   coffee-script-source (= 1.8.0)
