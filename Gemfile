@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise', '~> 3.5.1'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   gem 'sqlite3'
