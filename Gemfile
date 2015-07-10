@@ -10,8 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise', '~> 3.5.1'
-gem 'paperclip', '~> 4.3'
-gem 'aws-sdk', '~>2.1.2'
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'sqlite3'

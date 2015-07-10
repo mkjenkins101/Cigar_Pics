@@ -28,6 +28,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (5.2.1)
+      execjs
+      json
     aws-sdk (2.1.4)
       aws-sdk-resources (= 2.1.4)
     aws-sdk-core (2.1.4)
@@ -35,8 +38,9 @@ GEM
     aws-sdk-resources (2.1.4)
       aws-sdk-core (= 2.1.4)
     bcrypt (3.1.10-x86-mingw32)
-    bootstrap-sass (3.3.1.0)
-      sass (~> 3.2)
+    bootstrap-sass (3.3.5)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -60,7 +64,7 @@ GEM
     execjs (2.5.2)
     hike (1.2.3)
     i18n (0.7.0)
-    jbuilder (2.3.0)
+    jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jmespath (1.0.2)
@@ -74,7 +78,7 @@ GEM
     mime-types (2.6.1)
     mimemagic (0.3.0)
     minitest (5.7.0)
-    multi_json (1.11.1)
+    multi_json (1.11.2)
     orm_adapter (0.5.0)
     paperclip (4.3.0)
       activemodel (>= 3.2.0)
@@ -149,14 +153,14 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  aws-sdk (~> 2.1.2)
+  aws-sdk
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   coffee-script-source (= 1.8.0)
   devise (~> 3.5.1)
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip (~> 4.3)
+  paperclip
   pg
   rails (= 4.1.8)
   rails_12factor
