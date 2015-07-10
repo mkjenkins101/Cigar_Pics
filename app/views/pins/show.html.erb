@@ -3,11 +3,10 @@
     <p id="notice"><%= notice %></p>
   </div>
 
-  <div class="panel-body">
+  <div class="panel-body center">
     <p>
-      <strong>Description:</strong>
+    <%= image_tag @pin.image.url %><br>
       <%= @pin.description %>
-      <%= image_tag @pin.image.url %>
     </p>
   </div>
 
