@@ -1,6 +1,5 @@
 <div class="jumbotron center">
   <h1>Mitch's Pin Picks</h1>
-    <p>This is the beginning!
     <% if user_signed_in? %> 
       <br>
       <%= link_to "View pins", pins_path, class: "btn btn-default btn-lg" %>
@@ -10,5 +9,4 @@
       <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
       <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
     <% end %>
-    </p>
 </div>
