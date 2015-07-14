@@ -11,6 +11,17 @@
       <strong><%= @pin.user.name %></strong>
     </p>
   </div>
+  <div class="center">
+    <div class="small-2 large-4 columns">
+      <% if current_user %>
+        Construction: <%= rating_for @pin, "construction" %>
+        Burn: <%= rating_for @pin, "burn" %>
+        Flavor: <%= rating_for @pin, "flavor" %>
+        Overall: <%= rating_for @pin, "overall" %>
+      <% end %>
+    </div>
+    <br>
+  </div>
 
   <div class="panel-footer center">
     <% if @pin.user == current_user %>
