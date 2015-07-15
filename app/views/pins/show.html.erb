@@ -14,10 +14,10 @@
   <div class="center">
     <div class="small-2 large-4 columns">
       <% if current_user %>
-        Construction: <%= rating_for @pin, "construction" %>
-        Burn: <%= rating_for @pin, "burn" %>
-        Flavor: <%= rating_for @pin, "flavor" %>
-        Overall: <%= rating_for @pin, "overall" %>
+        Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10, path: 'assets/images' %>
+        Burn: <%= rating_for @pin, "burn", disable_after_rate: false, star: 10, path: 'assets/images' %>
+        Flavor: <%= rating_for @pin, "flavor", disable_after_rate: false, star: 10, path: 'assets/images' %>
+        Overall: <%= rating_for @pin, "overall", disable_after_rate: false, star: 10, path: 'assets/images' %>
       <% end %>
     </div>
     <br>
