@@ -11,7 +11,8 @@
       <strong><%= @pin.user.name %></strong>
     </p>
   </div>
-  <div class="center">
+  <!--rating disabled until I get it working in production -->
+  <!--div class="center">
     <div class="small-2 large-4 columns">
       <% if current_user %>
         Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10, path: 'assets/images' %>
@@ -21,7 +22,7 @@
       <% end %>
     </div>
     <br>
-  </div>
+  </div-->
 
   <div class="panel-footer center">
     <% if @pin.user == current_user %>
