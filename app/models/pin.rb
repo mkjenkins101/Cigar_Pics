@@ -6,6 +6,6 @@ class Pin < ActiveRecord::Base
   validates :image, presence: true
   validates :description, presence: true
 
-  ratyrate_rateable 'construction', 'burn', 'flavor', 'overall'
+  ratyrate_rateable 'construction', 'burn', 'flavor', 'overallm
   
 end
