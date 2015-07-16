@@ -12,17 +12,17 @@
     </p>
   </div>
   <!--rating disabled until I get it working in production -->
-  <!--div class="center">
+  <div class="center">
     <div class="small-2 large-4 columns">
       <% if current_user %>
-        Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10, path: 'assets/images' %>
-        Burn: <%= rating_for @pin, "burn", disable_after_rate: false, star: 10, path: 'assets/images' %>
-        Flavor: <%= rating_for @pin, "flavor", disable_after_rate: false, star: 10, path: 'assets/images' %>
-        Overall: <%= rating_for @pin, "overall", disable_after_rate: false, star: 10, path: 'assets/images' %>
+        Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10 %>
+        Burn: <%= rating_for @pin, "burn", disable_after_rate: false, star: 10 %>
+        Flavor: <%= rating_for @pin, "flavor", disable_after_rate: false, star: 10 %>
+        Overall: <%= rating_for @pin, "overall", disable_after_rate: false, star: 10 %>
       <% end %>
     </div>
     <br>
-  </div-->
+  </div>
 
   <div class="panel-footer center">
     <% if @pin.user == current_user %>
