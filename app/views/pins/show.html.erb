@@ -11,19 +11,12 @@
       <strong><%= @pin.user.name %></strong>
     </p>
   </div>
-  <!--rating disabled until I get it working in production -->
   <div class="center">
     <div class="small-2 large-4 columns">
-      <% if current_user %>
-        Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10 %>
-        Burn: <%= rating_for @pin, "burn", disable_after_rate: false, star: 10 %>
-        Flavor: <%= rating_for @pin, "flavor", disable_after_rate: false, star: 10 %>
-        Overall: <%= rating_for @pin, "overall", disable_after_rate: false, star: 10 %>
-      <% end %>
+      <%= render 'pins/ratings' %>
     </div>
     <br>
   </div>
-
   <div class="panel-footer center">
     <% if @pin.user == current_user %>
       <%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-primary btn-sm" %><br><br> 

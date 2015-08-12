@@ -1,0 +1,12 @@
+<% if current_user %>
+  <% if overall == 0 %>
+    Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10 %>
+    Burn: <%= rating_for @pin, "burn", disable_after_rate: false, star: 10 %>
+    Flavor: <%= rating_for @pin, "flavor", disable_after_rate: false, star: 10 %>
+  <% else current_user %>
+    Construction: <%= rating_for @pin, "construction", disable_after_rate: false, star: 10 %>
+    Burn: <%= rating_for @pin, "burn", disable_after_rate: false, star: 10 %>
+    Flavor: <%= rating_for @pin, "flavor", disable_after_rate: false, star: 10 %>
+    Overall: <%= rating_for @pin, "overall", disable_after_rate: true, star: overall, avg: 10 %>
+  <% end %>
+<% end %>
