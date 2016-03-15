@@ -1,11 +1,32 @@
-$body-bg:	#2980b9;
+$body-bg:	transparent;
 $font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-default-bg:	#2c3e50;
+$font-family: 'Mr+Bedfort';
+$navbar-default-bg:	black;
 $navbar-default-link-color:  white;
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Mr+Bedfort);
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+
+html { 
+	background: url(cigar_cognac.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.navbar.navbar-static-top.navbar-default {
+	font-family: 'Mr+Bedfort';
+	background-color: rgba(255,255,255,0);
+	border-color: rgba(255,255,255,0);
+}
+
+a.navbar-brand {
+	font-size: 40px;
+	font-family: 'Mr+Bedfort';
+}
 
 .center {
   text-align: center;
