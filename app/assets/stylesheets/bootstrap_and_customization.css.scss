@@ -17,10 +17,15 @@ html {
 	background-size: cover;
 }
 
+ul.nav.navbar-nav.navbar-right {
+	text-align: right;
+}
+
 .navbar.navbar-static-top.navbar-default {
 	font-family: 'Mr+Bedfort';
 	background-color: rgba(255,255,255,0);
 	border-color: rgba(255,255,255,0);
+	border-width: 0 !important;
 }
 
 a.navbar-brand {
