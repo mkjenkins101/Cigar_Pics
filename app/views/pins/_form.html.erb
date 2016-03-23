@@ -20,6 +20,23 @@
       <%= f.label :description %>
       <%= f.text_field :description, class: "form-control" %>
     </div>
+		<div class="form-group">
+      <%= f.label :shape %>
+			<%= f.select :shape, options_for_select(Pin.cigar_shape), {}, class: "form-control" %>
+    </div>
+    <div class="form-group size-fields">
+      <%= f.label :length %>
+			<%= f.select :length, options_for_select(Pin.cigar_length), {}, class: "form-control" %>
+    </div>
+    <div class="form-group size-fields">X</div>
+    <div class="form-group size-fields">
+      <%= f.label :ring %>
+			<%= f.select :ring, options_for_select(Pin.cigar_ring), {}, class: "form-control" %>
+    </div>
+		<div class="form-group">
+      <%= f.label :wrapper %>
+			<%= f.select :wrapper, options_for_select(Pin.cigar_wrapper), {}, class: "form-control" %>
+    </div>
     <div class="form-group actions">
       <%= f.submit class: "btn btn-primary btn-sm" %>
     </div>

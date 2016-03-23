@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150714215507) do
+ActiveRecord::Schema.define(version: 20160318190018) do
 
   create_table "average_caches", force: true do |t|
     t.integer  "rater_id"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(version: 20150714215507) do
     t.float    "avg",           null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "comments", force: true do |t|
+    t.integer  "pin_id"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "overall_averages", force: true do |t|
@@ -39,6 +47,10 @@ ActiveRecord::Schema.define(version: 20150714215507) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "shape"
+    t.string   "length"
+    t.string   "ring"
+    t.string   "wrapper"
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id"

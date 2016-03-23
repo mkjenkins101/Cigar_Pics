@@ -1,25 +1,39 @@
-<div class="panel">
-  <div class="panel-heading">
-    <p id="notice"><%= notice %></p>
-  </div>
-
-  <div class="panel-body center">
-  <%= link_to 'Back', pins_path %>
-    <p>
-    <%= image_tag @pin.image.url(:medium) %><br>
-      <p><%= @pin.description %></p>
-      <strong><%= @pin.user.name %></strong>
-    </p>
-  </div>
-  <div class="center">
-    <div class="small-2 large-4 columns">
-      <%= render 'pins/ratings' %>
-    </div>
-    <br>
-  </div>
-  <div class="panel-footer center">
+<div class="panel panel-main">
+  <div class="panel-header">
+		<%= button_to 'All Pics', pins_path, method: 'get', class: "btn btn-secondary btn-sm btn-main" %>
     <% if @pin.user == current_user %>
-      <%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-primary btn-sm" %><br><br> 
+			<%= button_to 'Edit', edit_pin_path, method: 'get', class: "btn btn-secondary btn-sm btn-edit" %>
     <% end %>
-  </div>
-</div>
+		<%= button_to 'Pick Pic', "", class: "btn btn-primary btn-sm btn-pick-pic" %>
+	</div>
+  <div class="panel-body">
+		<div class="pin-content">
+    	<%= image_tag @pin.image.url(:medium) %><br>
+			<% if @pin.user != current_user %>
+      	<p><%= @pin.user.name %></p>
+			<% end %>
+		</div> <!-- .pin-content -->
+  </div> <!-- .panel-body -->
+	<div class="pin-description">
+  	<strong><%= @pin.description %></strong>
+	</div>
+	<div class="ratings center">
+  	<div class="small-2 large-4 columns">
+    	<%= render 'pins/ratings' %>
+  	</div>
+	</div> <!-- .ratings -->
+	<div class="cigar-specs cp-font">
+		<div class="cigar-spec">
+		<strong>Shape: </strong><%= @pin.shape %>
+		</div>
+		<div class="cigar-spec">
+		<strong>Size: </strong><%= @pin.length %> X <%= @pin.ring %>
+		</div>
+		<div class="cigar-spec">
+		<strong>Wrapper: </strong><%= @pin.wrapper %>
+		</div>
+	</div><!-- .cigar-specs -->
+</div> <!-- .panel -->
+<% if current_user != nil %> 
+	<%= render 'comments/index' %>
+<% end %>

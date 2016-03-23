@@ -1,0 +1,16 @@
+<div class="panel panel-main"  ng-app='commentsNg' ng-controller='CommentsCtrl'>
+	<span ng-init="pin_id = '<%= @pin.id %>'"></span>
+  <div class="comment" ng-repeat='comment in comments'>
+    <div class="comment-user">{{comment.user}}</div>
+    <br>
+    {{comment.body}}
+  </div>
+  <form ng-submit="addComment('<%= current_user.name %>', '<%= @pin.id %>', body)" class="comment-form center">
+    <h3>Speak your mind</h3>
+    <div class="form-group center">
+      <textarea class="form-control pic-comment" rows="5" placeholder="What?" ng-model="body"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Comment</button>
+  </form>
+</div> <!-- .panel -->
+<% javascript_include_tag "comments/application" %>

@@ -11,7 +11,7 @@ class PinsController < ApplicationController
   end
 
   def show
-    respond_with(@pin)
+    respond_with(@pins)
   end
 
   def new
@@ -53,6 +53,6 @@ class PinsController < ApplicationController
     end	
 
     def pin_params
-      params.require(:pin).permit(:description, :image)
+      params.require(:pin).permit(:description, :image, :shape, :length, :ring, :wrapper)
     end
 end

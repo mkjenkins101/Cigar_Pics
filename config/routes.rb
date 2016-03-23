@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   post '/rate' => 'rater#create', :as => 'rate'
   resources :pins
+	get "/comments" => 'comments#index'
+	post "/comments" => 'comments#create'
 
   devise_for :users
   #get 'pages/home'

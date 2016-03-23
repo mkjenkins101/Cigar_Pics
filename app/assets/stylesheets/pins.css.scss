@@ -14,3 +14,66 @@
 .box img {
   width: 100%;
 }
+
+.pic-comment {
+	background: lightgrey;
+	width: 310px; 
+	margin: 0 auto; 
+	resize: none;
+}
+
+.panel-main {
+	width: 330px; 
+	text-align: center;
+	margin: 0px auto 30px auto;
+}
+
+.pin-description {
+	text-align: center;
+	margin: 0px auto 10px auto;
+}
+
+.comment {
+	padding: 10px;
+}
+.comment-user {
+	float: left;
+	color: #0044cc;
+}
+
+.comment-body {
+	text-align: center;
+	margin: 0px auto 10px auto;
+}
+
+.comment-form {
+	font-family: 'Mr+Bedfort';
+	padding: 0px 0px 30px 0px;
+	h3 {
+		margin-top: 10px;
+	}
+}
+
+.ratings {
+	margin: 0px auto 20px auto;
+}
+
+.size-fields {
+	display: inline-block;
+	width: 20%;
+}
+
+.size-fields label {
+	display: block;
+}
+
+.cigar-specs {
+	font-size: 16px;
+	text-align: left;
+	width: 180px;
+	margin: 0 auto;
+}
+
+.cigar-spec {
+	margin: 10px;
+}

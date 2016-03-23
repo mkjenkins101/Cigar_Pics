@@ -22,7 +22,6 @@ ul.nav.navbar-nav.navbar-right {
 }
 
 .navbar.navbar-static-top.navbar-default {
-	font-family: 'Mr+Bedfort';
 	background-color: rgba(255,255,255,0);
 	border-color: rgba(255,255,255,0);
 	border-width: 0 !important;
@@ -30,9 +29,29 @@ ul.nav.navbar-nav.navbar-right {
 
 a.navbar-brand {
 	font-size: 40px;
+}
+
+.cp-font {
 	font-family: 'Mr+Bedfort';
 }
 
 .center {
   text-align: center;
+}
+
+.btn {
+	font-family: 'Mr+Bedfort' !important;
+}
+
+.btn-main {
+	float: right; 
+	margin: 15px 15px 8px 0px;
+}
+.btn-edit {
+	float: right; 
+	margin: 15px 15px 8px 0px;
+}
+.btn-pick-pic {
+	float: left; 
+	margin: 15px 0px 8px 15px;
 }
