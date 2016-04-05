@@ -23,7 +23,7 @@ class Pin < ActiveRecord::Base
 		return ["Connecticut","Corojo","Habano","Maduro",
 						"Candela","Sumatra","Oscuro","Cameroon",
 						"Grown","Criollo","Colorado","San Andres",
-						"Natural","Rosado"].sort
+						"Natural","Rosado","Sun Grown"].sort
 	end
 	def self.cigar_length
 		return ["3","3.5","4","4.5","5","5.5","6","6.5","7","7.5","8","8.5","9"]	
