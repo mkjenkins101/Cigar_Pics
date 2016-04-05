@@ -15,14 +15,18 @@ class Pin < ActiveRecord::Base
 	def self.cigar_shape
 		return ["Corona","Petit Corona","Churchill","Robusto","Corona Gorda",
 						"Double Corona","Panetela","Lonsdale","Pyramid","Belicoso",
-						"Torpedo","Perfecto","Culebra","Diadem"]
+						"Torpedo","Perfecto","Culebra","Diadem","Presidente","Chisel",
+						"Parejo","Petit Robusto","Gorda","Toro","Corona Grande",
+						"Lonsdale","Lancero","Gran Corona"].sort
 	end
 	def self.cigar_wrapper
 		return ["Connecticut","Corojo","Habano","Maduro",
-						"Candela","Sumatra","Oscuro","Cameroon"]
+						"Candela","Sumatra","Oscuro","Cameroon",
+						"Grown","Criollo","Colorado","San Andres",
+						"Natural","Rosado"].sort
 	end
 	def self.cigar_length
-		return ["3","4","5","6","7","8","9"]	
+		return ["3","3.5","4","4.5","5","5.5","6","6.5","7","7.5","8","8.5","9"]	
 	end
 	def self.cigar_ring
 		return ["20","21","22","23","24","25","26","27","28","29",
